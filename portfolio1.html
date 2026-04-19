@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devika | Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    scroll-behavior: smooth;
+}
+
+/* Theme */
+:root {
+    --purple: #7b2cbf;
+    --dark: #0d0d0d;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--dark);
+}
+.navbar a {
+    color: white !important;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #3a0ca3);
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn-purple {
+    background: var(--purple);
+    color: white;
+}
+.btn-purple:hover {
+    background: #9d4edd;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Devika</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="fw-bold display-4"> Devika Sundaram </h1>
+    <p class="lead">Aspiring Web Developer</p>
+    <a href="#projects" class="btn btn-purple mt-3">View My Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container py-5">
+  <h2 class="text-center mb-4">About Me</h2>
+
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        I am a Computer Technology student passionate about building websites and learning modern technologies.
+        I enjoy solving problems and creating simple, user-friendly designs.
+      </p>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="devika.jpeg" class="img-fluid rounded-circle shadow" width="200">
+    </div>
+  </div>
+</section>
+<!-- Education -->
+    <section id="education" class="mb-5">
+        <h2 class="text-center mb-4">EDUCATION</h2>
+        <div class="card p-3 shadow-sm">
+            <p><strong>B.Sc Computer Technology</strong> (Ongoing – 79.6%)</p>
+            <p><strong>12th Standard</strong> – 78%</p>
+            <p><strong>SSLC</strong> – 86%</p>
+        </div>
+    </section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow text-center">
+          <h5>HTML & CSS</h5>
+          <p>Building responsive layouts</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow text-center">
+          <h5>JavaScript</h5>
+          <p>Basic logic & interactivity</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow text-center">
+          <h5>Java</h5>
+          <p>OOP fundamentals</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container py-5">
+  <h2 class="text-center mb-4">Projects</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="card shadow p-3">
+        <h5>Portfolio Website</h5>
+        <p>Built using HTML & Bootstrap</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow p-3">
+        <h5>Student Management System</h5>
+        <p>Basic CRUD concept</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow p-3">
+        <h5>Storytelling App</h5>
+        <p>No-code app for children</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow p-3">
+        <h5>JS Calculator</h5>
+        <p>Simple logic-based calculator</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Achievements -->
+<section id="achievements" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Achievements</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card p-4 shadow text-center">
+
+          <p>Secured 2nd place in Inter College INNOVEX Competition (2026)</p>
+          <p>Participated in No-Code App Challenges</p>
+          <p>Completed learning modules on Infosys Springboard – Pragati</p>
+          <p>Successfully completed learning progress on HackerRank</p>
+          <p>Debugging Basic Code</p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+   
+<!-- Contact -->
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+          </div>
+
+          <button class="btn btn-purple w-100">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>© 2026 Devika | Built with Bootstrap 💜</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
